@@ -16,10 +16,24 @@ body {
   background-color: #1e1e1e;
   color: #fff;
 }
+.dark-mode .nav-link {
+  color: #fff;
+}
+.dark-mode .service-content .service-box {
+  color: #000;
+}
 .navbar {
   padding: 8px 0;
 }
-
+.logo-light {
+  display: none;
+}
+.dark-mode .navbar .logo-light {
+  display: flex;
+}
+.dark-mode .logo {
+  display: none;
+}
 .navbar .container {
   z-index: 1;
   position: relative;
@@ -268,6 +282,7 @@ body {
   width: 75%;
   margin: auto;
   padding: 24px;
+  border-radius: 12px;
 }
 .testimonial .feedback-card .user-img {
   width: 20%;
@@ -309,6 +324,9 @@ body {
   font-weight: 500;
 }
 /* contact section  */
+.contact {
+  padding: 60px 0;
+}
 .contact .input-btn {
   display: flex;
   width: 60%;
@@ -328,12 +346,15 @@ body {
 }
 
 /* footer styling  */
+.dark-mode footer {
+  background-color: #1e1e1e;
+}
 footer {
   background-color: #f8f8f8;
 }
 footer .logo {
   text-align: center;
-  padding: 48px 0 24px 0;
+  padding: 64px 0 44px 0;
 }
 .footer-nav {
   display: flex;
@@ -351,6 +372,13 @@ footer .copyright {
   text-align: center;
   padding: 21px 0;
   font-size: 1.3rem;
+}
+.dark-mode footer .logo-light {
+  display: block;
+  text-align: center;
+}
+.dark-mode footer .copyright {
+  background-color: #121212;
 }
 footer .copyright span {
   color: #fd6f00;
