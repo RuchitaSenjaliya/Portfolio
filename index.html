@@ -26,6 +26,9 @@
         <a class="navbar-brand logo" href="/">
           <img src="./img/logo.png" alt="" srcset="" class="img-fluid" />
         </a>
+        <a class="navbar-brand logo-light" href="/">
+          <img src="./img/logo-light.png" alt="" srcset="" class="img-fluid" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -60,7 +63,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <!-- <button onclick="myFunction()">Dark mode</button> -->
+            <li class="nav-item">
+              <button onclick="myFunction()" class="dark-btn">Dark mode</button>
+            </li>
             <li class="nav-item">
               <button type="button" class="btn-orange">Download CV</button>
             </li>
@@ -437,6 +442,9 @@
       <div class="logo">
         <img src="./img/logo.png" alt="" srcset="" class="img-fluid" />
       </div>
+      <div class="logo-light">
+        <img src="./img/logo-light.png" alt="" srcset="" class="img-fluid" />
+      </div>
       <ul class="footer-nav">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#home">Home</a>
@@ -468,11 +476,11 @@
       </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <!-- <script>
+    <script>
       function myFunction() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
-    </script> -->
+    </script>
   </body>
 </html>
