@@ -72,18 +72,18 @@
   .navbar .logo {
     width: 30%;
   }
-  .show-nav {
+  .navbar .show-nav {
     position: absolute;
     border-radius: 10px;
     top: 70%;
     width: 100%;
-    background-color: #fd9342;
+    background-color: #ffa967;
     color: #fff;
     margin-top: 20px;
     text-align: center;
     padding: 0 0 100px 0;
   }
-  .show-nav .nav-link {
+  .navbar .show-nav .nav-link {
     color: #fff;
     padding: 16px 0;
   }
@@ -92,7 +92,7 @@
     line-height: 60px;
   }
   .home-hero .home-hero-content .tab {
-    padding-left: 80px;
+    padding-left: 60px;
   }
   .title {
     font-size: 2.5rem;
@@ -147,6 +147,7 @@
     width: 70%;
     margin: auto;
   }
+
   .title {
     font-size: 3rem;
   }

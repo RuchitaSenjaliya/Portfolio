@@ -60,6 +60,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <!-- <button onclick="myFunction()">Dark mode</button> -->
             <li class="nav-item">
               <button type="button" class="btn-orange">Download CV</button>
             </li>
@@ -315,20 +316,101 @@
             nibh lectus netus in. Aliquet donec morbi convallis pretium
           </div>
         </div>
-        <div class="feedback-card">
-          <div class="user-img">
-            <img src="./img/user-1.png" alt="" class="img-fluid" />
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
-          <div class="user-msg">
-            <span>&ldquo; </span> Lorem ipsum dolor sit amet consectetur. In
-            enim cursus odio accumsan. Id leo urna velit neque mattis id tellus
-            arcu condimentum. Augue dictum dolor elementum convallis dignissim
-            malesuada commodo ultrices. <span>&rdquo;</span>
-            <div class="user-detail">
-              <div class="name">Name</div>
-              <p>CEO</p>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="feedback-card">
+                <div class="user-img">
+                  <img src="./img/user-1.png" alt="" class="img-fluid" />
+                </div>
+                <div class="user-msg">
+                  <span>&ldquo; </span> Lorem ipsum dolor sit amet consectetur.
+                  In enim cursus odio accumsan. Id leo urna velit neque mattis
+                  id tellus arcu condimentum. Augue dictum dolor elementum
+                  convallis dignissim malesuada commodo ultrices.
+                  <span>&rdquo;</span>
+                  <div class="user-detail">
+                    <div class="name">Name</div>
+                    <p>CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="feedback-card">
+                <div class="user-img">
+                  <img src="./img/user-2.png" alt="" class="img-fluid" />
+                </div>
+                <div class="user-msg">
+                  <span>&ldquo; </span> Lorem ipsum dolor sit amet consectetur.
+                  In enim cursus odio accumsan. Id leo urna velit neque mattis
+                  id tellus arcu condimentum. Augue dictum dolor elementum
+                  convallis dignissim malesuada commodo ultrices.
+                  <span>&rdquo;</span>
+                  <div class="user-detail">
+                    <div class="name">Name</div>
+                    <p>CEO</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="feedback-card">
+                <div class="user-img">
+                  <img src="./img/user-1.png" alt="" class="img-fluid" />
+                </div>
+                <div class="user-msg">
+                  <span>&ldquo; </span> Lorem ipsum dolor sit amet consectetur.
+                  In enim cursus odio accumsan. Id leo urna velit neque mattis
+                  id tellus arcu condimentum. Augue dictum dolor elementum
+                  convallis dignissim malesuada commodo ultrices.
+                  <span>&rdquo;</span>
+                  <div class="user-detail">
+                    <div class="name">Name</div>
+                    <p>CEO</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
@@ -347,7 +429,7 @@
             class="form-control"
             placeholder="Your email address"
             aria-label="First name" />
-          <button type="button" class="btn-orange">Start now</button>
+          <button type="button" class="btn-orange">Contact Me</button>
         </div>
       </div>
     </section>
@@ -386,5 +468,11 @@
       </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+      }
+    </script> -->
   </body>
 </html>
