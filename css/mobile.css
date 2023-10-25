@@ -9,61 +9,233 @@
     padding: 4px 12px;
     font-size: 1.1rem;
   }
-  .logo {
+  .navbar .logo {
     width: 20%;
   }
-  .hero-heading {
+  .home-hero .home-hero-content .hero-heading {
     font-size: 4.5rem;
     line-height: 80px;
   }
-  .tab {
-    padding-left: 150px;
+  .home-hero .home-hero-content .tab {
+    padding-left: 160px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home-hero .home-hero-content .img-size {
+    width: 450px;
+    height: 550px;
+    object-fit: cover;
   }
 }
 @media screen and (max-width: 1200px) {
-  .hero-heading {
-    font-size: 3.2rem;
+  .home-hero .home-hero-content .hero-heading {
+    font-size: 4rem;
     line-height: 60px;
   }
-  .tab {
-    padding-left: 100px;
+  .home-hero .home-hero-content .tab {
+    padding-left: 120px;
   }
   .para {
     font-size: 1rem;
     padding: 12px 0 24px 0;
   }
-  .hero-text-21 {
+  .home-hero .home-hero-content .hero-text-21 {
     font-size: 1.3rem;
   }
-  .hero-text-orange-21 {
+  .home-hero .home-hero-content .hero-text-orange-21 {
     font-size: 1.5rem;
   }
-  .home-hero-img .orange-box {
-    width: 315px;
-  }
-  /* .about .about-img {
-    width: 60%;
-    margin: auto;
-  } */
-  /* .about .about-img .orange-box {
-    position: absolute;
-    top: 40px;
-    left: 45px;
-    width: 80%;
-    text-align: center;
-  } */
 }
 @media screen and (max-width: 1024px) {
+  .about .skill .bars span {
+    font-size: 1.3rem;
+  }
+  .service-content .service-box .service-name {
+    font-size: 1.7rem;
+  }
+  .service-content .service-box .service-desc {
+    font-size: 1rem;
+  }
+  .projects .btn-tabs .btn-gray {
+    padding: 8px 24px;
+    font-size: 1.2rem;
+    margin: 0 8px 12px 0;
+  }
+  .projects .btn-tabs .btn-orange {
+    padding: 8px 24px;
+    font-size: 1.2rem;
+    margin: 0 5px 0 0;
+  }
 }
 
 @media screen and (max-width: 993px) {
+  .navbar .logo {
+    width: 30%;
+  }
+  .show-nav {
+    position: absolute;
+    border-radius: 10px;
+    top: 70%;
+    width: 100%;
+    background-color: #fd9342;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 0 100px 0;
+  }
+  .show-nav .nav-link {
+    color: #fff;
+    padding: 16px 0;
+  }
+  .home-hero .home-hero-content .hero-heading {
+    font-size: 3.5rem;
+    line-height: 60px;
+  }
+  .home-hero .home-hero-content .tab {
+    padding-left: 80px;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .main-title {
+    width: 80%;
+  }
+  .home-hero-img .orange-box {
+    width: 328px;
+  }
+  .about .about-img .orange-box {
+    top: 30px;
+    left: 30px;
+    width: 80%;
+  }
+
+  .project-card {
+    margin: 30px 0;
+  }
+  .projects .btn-tabs .btn-gray {
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    margin: 0 8px 12px 0;
+  }
+  .projects .btn-tabs .btn-orange {
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    margin: 0 5px 0 0;
+  }
+  .testimonial .feedback-card {
+    width: 100%;
+    padding: 18px;
+  }
+  .testimonial .feedback-card .user-msg {
+    font-size: 1rem;
+    width: 60%;
+  }
+  .contact .input-btn input {
+    font-size: 1rem;
+  }
+  .contact .input-btn .btn-orange {
+    font-size: 1rem;
+  }
+  .marginX-auto {
+    margin: 0 auto;
+  }
 }
 
-@media screen and (max-width: 576px) {
-}
+@media screen and (max-width: 767px) {
+  .home-hero-img,
+  .about-hero-img {
+    width: 70%;
+    margin: auto;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .about .skill .bars span {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .about .about-img .orange-box {
+    position: absolute;
+    top: 69px;
+    width: 87%;
+    text-align: center;
+  }
+  .main-title {
+    width: 100%;
+  }
 
-@media screen and (max-width: 470px) {
-}
+  .testimonial .feedback-card .user-img {
+    width: 30%;
+  }
 
-@media screen and (max-width: 412px) {
+  .contact .input-btn {
+    width: 100%;
+  }
+  .contact .input-btn input {
+    padding: 0 18px;
+    font-size: 1rem;
+  }
+  .contact .input-btn .btn-orange {
+    padding: 4px 24px;
+    border-radius: 14px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home-hero-img .orange-box {
+    width: 250px;
+    left: -13px;
+    top: 10px;
+  }
+  .home-hero .home-hero-content .hero-heading {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .about .about-img .orange-box {
+    top: 30px;
+    left: 30px;
+    width: 80%;
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .about .skill .bars span {
+    font-size: 1rem;
+  }
+  .testimonial .feedback-card {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0;
+  }
+  .testimonial .feedback-card .user-img {
+    width: 50%;
+  }
+  .testimonial .feedback-card .user-msg span {
+    font-size: 1.3rem;
+  }
+  .testimonial .feedback-card .user-msg {
+    width: 100%;
+    padding: 0 6px;
+  }
+  .feedback-card .user-msg .user-detail .name {
+    font-size: 1.3rem;
+  }
+  .feedback-card .user-msg .user-detail p {
+    font-size: 1rem;
+  }
+  .contact .input-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .contact .input-btn input {
+    padding: 8px 15px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .contact .input-btn .btn-orange {
+    padding: 8px 0;
+  }
 }

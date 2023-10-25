@@ -8,7 +8,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
-    <!-- <link href="./css/mobile.css" rel="stylesheet" /> -->
+    <link href="./css/mobile.css" rel="stylesheet" />
 
     <link
       crossorigin="anonymous"
@@ -38,7 +38,9 @@
             ><i class="fa-solid fa-bars"></i
           ></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse show-nav"
+          id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
@@ -102,8 +104,7 @@
     <section class="about" id="about">
       <div class="container">
         <div class="row about-content">
-          <div
-            class="col-xl-6 col-lg-6 col-md-6 col-12 order-1 order-md-0 about-img">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12 about-img">
             <div class="orange-box">
               <img src="./img/orange-rectangle.png" alt="" class="img-fluid" />
             </div>
@@ -111,7 +112,7 @@
               <img src="./img/about-img.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 order-0 order-md-1">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12">
             <div class="title">About Me</div>
             <div class="para">
               Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
@@ -183,7 +184,7 @@
         </div>
         <div class="service-content">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
               <div class="service-box">
                 <div class="vector">
                   <img src="./img/ui-ux.png" alt="" />
@@ -195,7 +196,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
               <div class="service-box">
                 <div class="vector">
                   <img src="./img/web-design.png" alt="" />
@@ -207,7 +208,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
               <div class="service-box">
                 <div class="vector">
                   <img src="./img/app-design.png" alt="" />
@@ -219,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
               <div class="service-box">
                 <div class="vector">
                   <img src="./img/graphic-design.png" alt="" />
@@ -253,46 +254,52 @@
         </div>
         <div class="project-content">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="project-img">
-                <div class="back-img">
-                  <img src="./img/project-1.2.png" alt="" />
+            <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+              <div class="project-card">
+                <div class="project-img">
+                  <div class="back-img">
+                    <img src="./img/project-1.2.png" alt="" />
+                  </div>
+                  <div class="front-img">
+                    <img src="./img/project-1.1.png" alt="" />
+                  </div>
                 </div>
-                <div class="front-img">
-                  <img src="./img/project-1.1.png" alt="" />
+                <div class="project-desc">
+                  <p>Web Design</p>
+                  <div class="project-name">AirCalling Landing Page Design</div>
                 </div>
-              </div>
-              <div class="project-desc">
-                <p>Web Design</p>
-                <div class="project-name">AirCalling Landing Page Design</div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="project-img">
-                <div class="back-img">
-                  <img src="./img/project-2.2.png" alt="" />
+            <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+              <div class="project-card">
+                <div class="project-img">
+                  <div class="back-img">
+                    <img src="./img/project-2.2.png" alt="" />
+                  </div>
+                  <div class="front-img">
+                    <img src="./img/project-2.1.png" alt="" />
+                  </div>
                 </div>
-                <div class="front-img">
-                  <img src="./img/project-2.1.png" alt="" />
+                <div class="project-desc">
+                  <p>Web Design</p>
+                  <div class="project-name">Business Landing Page Design</div>
                 </div>
-              </div>
-              <div class="project-desc">
-                <p>Web Design</p>
-                <div class="project-name">Business Landing Page Design</div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="project-img">
-                <div class="back-img">
-                  <img src="./img/project-3.2.png" alt="" />
+            <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+              <div class="project-card">
+                <div class="project-img">
+                  <div class="back-img">
+                    <img src="./img/project-3.2.png" alt="" />
+                  </div>
+                  <div class="front-img">
+                    <img src="./img/project-3.1.png" alt="" />
+                  </div>
                 </div>
-                <div class="front-img">
-                  <img src="./img/project-3.1.png" alt="" />
+                <div class="project-desc">
+                  <p>Web Design</p>
+                  <div class="project-name">Ecom Web Page Design</div>
                 </div>
-              </div>
-              <div class="project-desc">
-                <p>Web Design</p>
-                <div class="project-name">Ecom Web Page Design</div>
               </div>
             </div>
           </div>
@@ -300,49 +307,53 @@
       </div>
     </section>
     <section class="testimonial" id="testimonials">
-      <div class="main-title">
-        <div class="title">Testimonials</div>
-        <div class="para">
-          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
-          lectus netus in. Aliquet donec morbi convallis pretium
+      <div class="container">
+        <div class="main-title">
+          <div class="title">Testimonials</div>
+          <div class="para">
+            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+            nibh lectus netus in. Aliquet donec morbi convallis pretium
+          </div>
         </div>
-      </div>
-      <div class="feedback-card">
-        <div class="user-img">
-          <img src="./img/user-1.png" alt="" class="img-fluid" />
-        </div>
-        <div class="user-msg">
-          <span>&ldquo; </span> Lorem ipsum dolor sit amet consectetur. In enim
-          cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu
-          condimentum. Augue dictum dolor elementum convallis dignissim
-          malesuada commodo ultrices. <span>&rdquo;</span>
-          <div class="user-detail">
-            <div class="name">Name</div>
-            <p>CEO</p>
+        <div class="feedback-card">
+          <div class="user-img">
+            <img src="./img/user-1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="user-msg">
+            <span>&ldquo; </span> Lorem ipsum dolor sit amet consectetur. In
+            enim cursus odio accumsan. Id leo urna velit neque mattis id tellus
+            arcu condimentum. Augue dictum dolor elementum convallis dignissim
+            malesuada commodo ultrices. <span>&rdquo;</span>
+            <div class="user-detail">
+              <div class="name">Name</div>
+              <p>CEO</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="contact" id="contact">
-      <div class="main-title">
-        <div class="title">Let's Design Together</div>
-        <div class="para">
-          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh
-          lectus netus in. Aliquet donec morbi convallis pretium
+      <div class="container">
+        <div class="main-title">
+          <div class="title">Let's Design Together</div>
+          <div class="para">
+            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+            nibh lectus netus in. Aliquet donec morbi convallis pretium
+          </div>
         </div>
-      </div>
-      <div class="input-btn">
-        <input
-          type=" text"
-          class="form-control"
-          placeholder="Your email address"
-          aria-label="First name" />
-        <button type="button" class="btn-orange">Start now</button>
+        <div class="input-btn">
+          <input
+            type=" text"
+            class="form-control"
+            placeholder="Your email address"
+            aria-label="First name" />
+          <button type="button" class="btn-orange">Start now</button>
+        </div>
       </div>
     </section>
     <footer>
       <div class="logo">
-        <img src="./img/logo.png" alt="" srcset="" />
+        <img src="./img/logo.png" alt="" srcset="" class="img-fluid" />
       </div>
       <ul class="footer-nav">
         <li class="nav-item">
