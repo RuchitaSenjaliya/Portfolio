@@ -10,15 +10,19 @@
     padding: 4px 12px;
     font-size: 1rem;
   }
-  .navbar .logo {
+  .navbar .logo,
+  .dark-mode .navbar .logo-light {
     width: 20%;
   }
   .home-hero .home-hero-content .hero-heading {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
     line-height: 80px;
   }
   .home-hero .home-hero-content .tab {
     padding-left: 160px;
+  }
+  .service-content .service-box .service-name {
+    font-size: 1.7rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -26,6 +30,12 @@
     width: 450px;
     height: 550px;
     object-fit: cover;
+  }
+  .service-content .service-box .service-name {
+    font-size: 1.5rem;
+  }
+  .service-content .service-box .service-desc {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -52,7 +62,7 @@
     font-size: 1.3rem;
   }
   .service-content .service-box .service-name {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .service-content .service-box .service-desc {
     font-size: 1rem;
@@ -164,10 +174,10 @@
     font-weight: 600;
   }
   .about .about-img .orange-box {
-    position: absolute;
+    /* position: absolute;
     top: 69px;
     width: 87%;
-    text-align: center;
+    text-align: center; */
   }
   .main-title {
     width: 100%;
@@ -192,18 +202,15 @@
 }
 @media screen and (max-width: 500px) {
   .home-hero-img .orange-box {
-    width: 250px;
-    left: -13px;
-    top: 10px;
+    width: 90%;
+    margin: auto;
   }
   .home-hero .home-hero-content .hero-heading {
     font-size: 2.5rem;
     line-height: 50px;
   }
-  .about .about-img .orange-box {
-    top: 30px;
-    left: 30px;
-    width: 80%;
+  .home-hero .home-hero-content .home-hero-img {
+    margin-bottom: 24px;
   }
   .title {
     font-size: 2rem;
@@ -245,6 +252,55 @@
     width: 100%;
   }
   .contact .input-btn .btn-orange {
-    padding: 8px 0;
+    align-self: center;
+    padding: 8px 24px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .navbar .logo,
+  .dark-mode .navbar .logo-light {
+    width: 50%;
+  }
+  .home-hero-img .orange-box {
+    top: 10px;
+  }
+  .home-hero .home-hero-content .hero-text-21 {
+    font-size: 1rem;
+  }
+  .home-hero .home-hero-content .hero-text-orange-21 {
+    font-size: 1.5rem;
+  }
+  .home-hero .home-hero-content .hero-heading {
+    font-size: 2.5rem;
+    line-height: 50px;
+    padding: 16px 0;
+  }
+  .title {
+    font-size: 2rem;
+    line-height: 70px;
+  }
+  .service-content .service-box .service-name {
+    font-size: 1.5rem;
+  }
+  .service-content .service-box .service-desc {
+    font-size: 1rem;
+  }
+  .project-content .project-img .front-img {
+    width: 75%;
+    object-fit: cover;
+  }
+  .project-content .project-img .front-img img {
+    width: 100%;
+  }
+  .project-content .project-name {
+    font-size: 1.1rem;
+  }
+  .project-content .project-desc p {
+    font-size: 0.9rem;
+  }
+
+  footer .copyright {
+    padding: 16px 0;
+    font-size: 0.9rem;
   }
 }

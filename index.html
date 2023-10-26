@@ -9,7 +9,6 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/mobile.css" rel="stylesheet" />
-
     <link
       crossorigin="anonymous"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -64,7 +63,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <button onclick="myFunction()" class="dark-btn">Dark mode</button>
+              <button onclick="darkMode()" class="dark-btn">Dark mode</button>
             </li>
             <li class="nav-item">
               <button type="button" class="btn-orange">Download CV</button>
@@ -98,10 +97,16 @@
               <img src="./img/home-hero-img.png" alt="" class="img-fluid" />
             </div>
             <div class="social">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-linkedin"></i>
+              <img src="./img/Facebook.png" alt="" srcset="" />
+              <img src="./img/Twitter.png" alt="" srcset="" />
+              <img src="./img/Instagram.png" alt="" srcset="" />
+              <img src="./img/LinkedIn.png" alt="" srcset="" />
+            </div>
+            <div class="social-light">
+              <img src="./img/Facebook - white.png" alt="" srcset="" />
+              <img src="./img/Twitter - white.png" alt="" srcset="" />
+              <img src="./img/Instagram - white.png" alt="" srcset="" />
+              <img src="./img/Linkedin - white.png" alt="" srcset="" />
             </div>
           </div>
         </div>
@@ -251,60 +256,328 @@
             nibh lectus netus in. Aliquet donec morbi convallis pretium
           </div>
         </div>
-        <div class="btn-tabs">
-          <button class="btn-gray">All</button>
-          <button class="btn-gray">UI / UX</button>
-          <button class="btn-orange">Web Design</button>
-          <button class="btn-gray">App Design</button>
-          <button class="btn-gray">Graphic Design</button>
-        </div>
-        <div class="project-content">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 marginX-auto">
-              <div class="project-card">
-                <div class="project-img">
-                  <div class="back-img">
-                    <img src="./img/project-1.2.png" alt="" />
-                  </div>
-                  <div class="front-img">
-                    <img src="./img/project-1.1.png" alt="" />
+        <ul class="btn-tabs nav nav-tabs" id="myTab">
+          <li class="nav-item">
+            <a href="#all" data-bs-toggle="tab" class="btn-gray active">
+              All
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#ui-ux" data-bs-toggle="tab" class="btn-gray"> UI/UX </a>
+          </li>
+          <li class="nav-item">
+            <a href="#web-design" data-bs-toggle="tab" class="btn-gray">
+              Web Design
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#app-design" data-bs-toggle="tab" class="btn-gray">
+              App Design
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#graphic-design" data-bs-toggle="tab" class="btn-gray">
+              Graphic Design
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="all">
+            <div class="project-content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-3.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-3.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>App Design</p>
+                      <div class="project-name">
+                        AirCalling Landing Page Design
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="project-desc">
-                  <p>Web Design</p>
-                  <div class="project-name">AirCalling Landing Page Design</div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-1.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-1.1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="project-desc">
+                      <p>UI/UX Design</p>
+                      <div class="project-name">
+                        Business Landing Page Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-2.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-2.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>Graphic Design</p>
+                      <div class="project-name">Ecom Web Page Design</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 marginX-auto">
-              <div class="project-card">
-                <div class="project-img">
-                  <div class="back-img">
-                    <img src="./img/project-2.2.png" alt="" />
-                  </div>
-                  <div class="front-img">
-                    <img src="./img/project-2.1.png" alt="" />
+          </div>
+          <div class="tab-pane fade" id="ui-ux">
+            <div class="project-content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-2.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-2.1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="project-desc">
+                      <p>UI/UX Design</p>
+                      <div class="project-name">Ecom Web Page Design</div>
+                    </div>
                   </div>
                 </div>
-                <div class="project-desc">
-                  <p>Web Design</p>
-                  <div class="project-name">Business Landing Page Design</div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-3.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-3.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>UI/UX Design</p>
+                      <div class="project-name">
+                        Business Landing Page Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-1.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-1.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>UI/UX Design</p>
+                      <div class="project-name">
+                        AirCalling Landing Page Design
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 marginX-auto">
-              <div class="project-card">
-                <div class="project-img">
-                  <div class="back-img">
-                    <img src="./img/project-3.2.png" alt="" />
-                  </div>
-                  <div class="front-img">
-                    <img src="./img/project-3.1.png" alt="" />
+          </div>
+          <div class="tab-pane fade" id="web-design">
+            <div class="project-content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-1.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-1.1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="project-desc">
+                      <p>Web Design</p>
+                      <div class="project-name">
+                        AirCalling Landing Page Design
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="project-desc">
-                  <p>Web Design</p>
-                  <div class="project-name">Ecom Web Page Design</div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-2.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-2.1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="project-desc">
+                      <p>Web Design</p>
+                      <div class="project-name">
+                        Business Landing Page Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-3.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-3.1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="project-desc">
+                      <p>Web Design</p>
+                      <div class="project-name">Ecom Web Page Design</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="app-design">
+            <div class="project-content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-2.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-2.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>App Design</p>
+                      <div class="project-name">
+                        AirCalling Landing Page Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-3.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-3.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>App Design</p>
+                      <div class="project-name">
+                        Business Landing Page Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-1.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-1.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>App Design</p>
+                      <div class="project-name">Ecom Web Page Design</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="graphic-design">
+            <div class="project-content">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-1.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-1.1.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="project-desc">
+                      <p>Graphic Design</p>
+                      <div class="project-name">
+                        AirCalling Landing Page Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-3.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-3.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>Graphic Design</p>
+                      <div class="project-name">
+                        Business Landing Page Design
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 marginX-auto">
+                  <div class="project-card">
+                    <div class="project-img">
+                      <div class="back-img">
+                        <img src="./img/project-2.2.png" alt="" />
+                      </div>
+                      <div class="front-img">
+                        <img src="./img/project-2.1.png" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="project-desc">
+                      <p>Graphic Design</p>
+                      <div class="project-name">Ecom Web Page Design</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -466,10 +739,16 @@
         </li>
       </ul>
       <div class="social">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <img src="./img/Facebook.png" alt="" srcset="" />
+        <img src="./img/Twitter.png" alt="" srcset="" />
+        <img src="./img/Instagram.png" alt="" srcset="" />
+        <img src="./img/LinkedIn.png" alt="" srcset="" />
+      </div>
+      <div class="social-light">
+        <img src="./img/Facebook - white.png" alt="" srcset="" />
+        <img src="./img/Twitter - white.png" alt="" srcset="" />
+        <img src="./img/Instagram - white.png" alt="" srcset="" />
+        <img src="./img/Linkedin - white.png" alt="" srcset="" />
       </div>
       <div class="copyright">
         © 2023 <span>Mumair</span> All Rights Reserved , Inc.
@@ -477,7 +756,7 @@
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script>
-      function myFunction() {
+      function darkMode() {
         var element = document.body;
         element.classList.toggle("dark-mode");
       }
