@@ -117,6 +117,10 @@ a {
   font-size: 1.3rem;
   padding: 16px 0;
 }
+.home-hero-content .para {
+  padding-right: 50px;
+  text-align: justify;
+}
 .home-hero-img {
   position: relative;
 }
@@ -127,6 +131,12 @@ a {
   object-fit: cover;
   text-align: center;
 }
+.home-hero-content .btn-orange {
+  font-size: 1.13rem;
+  padding: 5px 28px;
+  border-radius: 5px;
+}
+
 .social,
 .dark-mode .social-light {
   text-align: center;
@@ -179,26 +189,23 @@ a {
   background-color: #fd6f00;
   z-index: 2;
 }
-/* .about .skill .bars .progress .progress-bar::before {
+.progress,
+.progress-bar {
+  overflow: visible;
+}
+.about .skill .bars .progress .progress-bar::before {
   content: "";
   position: absolute;
   right: 0;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: 3px solid #fd6f00;
-  background-color: #000;
+  background-color: #d9d9d9;
   z-index: 5;
   box-shadow: 0px 4px 7px 0px #00000033;
-} */
-/* .about .skill .bars .progress .progress-bar::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  background: url("../img//Ellipse\ 9.png");
-  z-index: 5;
-  box-shadow: 0px 4px 7px 0px #00000033;
-} */
+}
+
 .about .skill .bars span {
   font-size: 1.5rem;
   font-weight: 600;
