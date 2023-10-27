@@ -7,6 +7,7 @@
       name="viewport" />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/mobile.css" rel="stylesheet" />
     <link
@@ -115,7 +116,8 @@
     <section class="about" id="about">
       <div class="container">
         <div class="row about-content">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 about-img">
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 col-12 about-img reveal fade-left">
             <div class="orange-box">
               <img src="./img/orange-rectangle.png" alt="" class="img-fluid" />
             </div>
@@ -123,7 +125,7 @@
               <img src="./img/about-img.png" alt="" class="img-fluid" />
             </div>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12 reveal fade-right">
             <div class="title">About Me</div>
             <div class="para">
               Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
@@ -193,7 +195,7 @@
             nibh lectus netus in. Aliquet donec morbi convallis pretium
           </div>
         </div>
-        <div class="service-content">
+        <div class="service-content reveal fade-bottom">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-3">
               <div class="service-box">
@@ -282,7 +284,7 @@
           </li>
         </ul>
 
-        <div class="tab-content">
+        <div class="tab-content reveal fade-bottom">
           <div class="tab-pane fade show active" id="all">
             <div class="project-content">
               <div class="row">
@@ -596,7 +598,7 @@
         </div>
         <div
           id="carouselExampleIndicators"
-          class="carousel slide"
+          class="carousel slide reveal fade-right"
           data-bs-ride="true">
           <div class="carousel-indicators">
             <button
@@ -692,7 +694,7 @@
         </div>
       </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact reveal fade-bottom" id="contact">
       <div class="container">
         <div class="main-title">
           <div class="title">Let's Design Together</div>
@@ -707,7 +709,7 @@
             class="form-control"
             placeholder="Your email address"
             aria-label="First name" />
-          <button type="button" class="btn-orange">Contact Me</button>
+          <button type="button" class="btn-orange">Contact</button>
         </div>
       </div>
     </section>
@@ -755,11 +757,6 @@
       </div>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script>
-      function darkMode() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-      }
-    </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
